@@ -7,7 +7,7 @@
     "local": "nodemon --inspect server.js"
   },
   "dependencies": {
-    "bootstrap": "^5.2.1",
+    "bootstrap": "5.2.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^4.6.0",
     "debug": "~2.6.9",
@@ -27,27 +27,14 @@
     "popper.js": "^1.16.1"
   },
   "engines": {
-    "node": "^10.15.0",
-    "npm": "^6.0.0"
+    "node": "^16.17.0",
+    "npm": "^8.18.0"
   },
   "description": "## Welcome to the MidTerm Project - the Favourite Book List App",
   "main": "server.js",
-  "devDependencies": {
-    "@types/body-parser": "^1.19.0",
-    "@types/connect-flash": "0.0.34",
-    "@types/cookie-parser": "^1.4.2",
-    "@types/express": "^4.17.8",
-    "@types/express-session": "^1.17.0",
-    "@types/mongoose": "^5.7.36",
-    "@types/morgan": "^1.9.1",
-    "@types/node": "^10.17.31",
-    "@types/passport": "^1.0.4",
-    "@types/passport-local": "^1.0.33",
-    "@types/passport-local-mongoose": "^4.0.13"
-  },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/johnnysong-cc/Comp229MidtermW23"
   },
   "keywords": [
     "NodeJS",
@@ -56,8 +43,5 @@
   ],
   "author": "Johnny Z. Song (301167073)",
   "license": "ISC",
-  "bugs": {
-    "url": ""
-  },
   "homepage": ""
 }
