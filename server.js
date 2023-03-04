@@ -1,12 +1,12 @@
-let app = require('./server/config/app');
-let debug = require('debug')('comp308-w2019-midterm:server');
-let http = require('http');
+const app = require('./server/config/app');
+const debug = require('debug')('comp308-w2019-midterm:server');
+const http = require('http');
 
 /**
  * Get port from environment and store in Express.
  */
 
-let port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**

@@ -1,4 +1,4 @@
-<% include ../partials/header.ejs %>
+<%- include("../partials/header.ejs") %>
 
     <!-- MAIN CONTENT -->
     <div class="container">
@@ -8,18 +8,18 @@
           <!-- ------------------------ -->
           <!-- FIX THE ADD BUTTON BELOW -->
           <!-- ------------------------ -->
-          <a href="" class="btn btn-primary"><i class="fa fa-plus"></i> Add a book</a>
+          <a href="/books/add" class="btn btn-primary"><i class="fa fa-plus"></i> Add a book</a>
           <br>
           <div class="table-responsive">
             <table class="table table-bordered table-striped table-hover">
               <thead>
                 <tr>
-                  <th>Title</th>
-                  <th class="text-center">Price</th>
-                  <th class="text-center">Author</th>
-                  <th class="text-center">Genre</th>
-                  <th class="text-center"></th>
-                  <th class="text-center"></th>
+                  <th class="lead">Title</th>
+                  <th class="lead text-center">Price</th>
+                  <th class="lead text-center">Author</th>
+                  <th class="lead text-center">Genre</th>
+                  <th class="lead text-center"></th>
+                  <th class="lead text-center"></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -30,17 +30,16 @@
                   <td class="text-center">$<%= books[count].Price %></td>
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>
-
                   <td class="text-center">
-                    <!-- ------------------------ -->
-                    <!-- ADD the EDIT BUTTON HERE -->
-                    <!-- ------------------------ -->
+                    <a href="/books/edit/<%= books[count]._id %>" class="btn btn-success" role="button">
+                      <i class="fa fa-pen-to-square">edit</i>
+                    </a>
                   </td>
 
                   <td class="text-center">
-                    <!-- ------------------------ -->
-                    <!-- ADD the DELETE BUTTON HERE -->
-                    <!-- ------------------------ -->
+                    <a href="/books/delete/<%= books[count]._id %>" class="btn btn-danger" role="button">
+                      <i class="fa fa-trash-can">remove</i>
+                    </a>
                   </td>
                 </tr>
                 <% } %>
@@ -54,6 +53,6 @@
       </div>
     </div>
 
-<% include ../partials/footer.ejs %>
+<%- include("../partials/footer.ejs") %>
 
 
