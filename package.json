@@ -7,7 +7,6 @@
     "local": "nodemon --inspect server.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^5.2.1",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^4.6.0",
