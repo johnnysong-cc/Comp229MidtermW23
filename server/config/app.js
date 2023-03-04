@@ -1,3 +1,10 @@
+/** app.js
+ * Student name: Johnny Z. Song
+ * Student id: 301167073
+ * March 3, 2023
+ * App: Favorite Book MidtermW23
+ * ============================== */
+
 //#region dependencies
 require("dotenv").config();
 const express = require('express');

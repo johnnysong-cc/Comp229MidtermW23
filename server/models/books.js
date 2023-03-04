@@ -5,7 +5,7 @@
  * App: Favorite Book MidtermW23
  * ============================== */
 
-const mongoose = require('mongoose');
+const mongoose = require('../config/dbConn');
 const findorcreate = require('mongoose-findorcreate');
 // create a model class
 const bookSchema = new mongoose.Schema({

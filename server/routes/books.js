@@ -5,12 +5,13 @@
  * App: Favorite Book MidtermW23
  * ============================== */
 
-// modules required for routing
+//#region dependencies required for routing
 const express = require('express');
 const router = express.Router();
-
-// define the book model
 const Book = require('../models/books');
+//#endregion dependencies required for routing
+
+//#region CRUD
 
 /* GET books List page. READ */
 router.get('/', (req, res, next) => {
@@ -102,5 +103,7 @@ router.get('/delete/:id', async (req, res, next) => {
     return next(err);
   }
 });
+
+//#endregion CRUD
 
 module.exports = router;

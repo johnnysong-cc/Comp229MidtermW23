@@ -1,3 +1,10 @@
+/** dbConn.js
+ * Student name: Johnny Z. Song
+ * Student id: 301167073
+ * March 3, 2023
+ * App: Favorite Book MidtermW23
+ * ============================== */
+
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', true);
 mongoose.connect(process.env.URI,
